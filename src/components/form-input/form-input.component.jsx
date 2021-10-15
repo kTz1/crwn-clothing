@@ -6,9 +6,10 @@ const FormInput = ({ handleChange, label, ...props }) => (
     <GroupContainer>
         <FormInputContainer onChange={handleChange} {...props} />
         {label ? (
-            <FormInputLabel className={props.value.lenght ? 'shrink' : ''}>
+            <FormInputLabel className={props.value.length ? 'shrink' : ''}>
                 {label}
-            </FormInputLabel>) : null}
+            </FormInputLabel>
+        ) : null}
     </GroupContainer>
 );
 
